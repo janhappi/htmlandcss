@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- try themes from: https://startbootstrap.com/-->
+    <!-- <link rel="stylesheet" type="text/css" href="theme.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme2.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme3.css"> -->
+    <link rel="stylesheet" type="text/css" href="theme4.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+
+    <link rel="stylesheet" href="custom.css">
+
+    <!-- use this style for testing and development purposes -->
+    <style type="text/css">
+        .container {
+            border: 2px dotted green;
+        }
+
+        .row {
+            border: 1px dotted red;
+        }
+
+        .row [class*=' col-'] {
+            border: 2px dotted purple;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- row 1 -->
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="jumbotron">
+                    <h1>Eat, Code, Sleep, Repeat</h1>
+                    <p>Tony Stark</p>
+                    <p>
+                        <a class="btn btn-primary btn-md" href="#" role="button">Learn more</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- row 2 -->
+        <div class="row">
+            <div class="col-md-4">
+
+                <div class="thumbnail">
+                    <img src="http://via.placeholder.com/400x400" alt="">
+                    <div class="caption">
+                        <h3>Portfolio 1</h3>
+                        <p>Lorem ipsum Lorem ipsum</p>
+                        <p>
+                            <a href="http://google.com" class="btn btn-primary" role="button">View more</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="http://via.placeholder.com/400x400" alt="">
+                    <div class="caption">
+                        <h3>Portfolio 2</h3>
+                        <p>Lorem ipsum Lorem ipsum</p>
+                        <p>
+                            <a href="http://google.com" class="btn btn-primary" role="button">View more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="http://via.placeholder.com/400x400" alt="">
+                    <div class="caption">
+                        <h3>Portfolio 3</h3>
+                        <p>Lorem ipsum Lorem ipsum</p>
+                        <p>
+                            <a href="http://google.com" class="btn btn-primary" role="button">View more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- row 3 -->
+        <div class="row">
+            <div class="col-md-12">
+
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/a2GujJZfXpg"></iframe>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- row 4 -->
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <h3>Talk to me</h3>
+                <form action="my_name">
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" class="form-control" name="my_name" id="my_name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="my_email">Email</label>
+                        <input type="email" class="form-control" name="my_name" id="my_email">
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="my_radio" id="my_radio-1">Send me weekly newsletters
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="my_radio" id="my_radio-2">Don't send me weekly newsletters
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-success" value="Drop me an email">
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-6 text-center">
+
+                <h3>About me</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quaerat rem quo sequi fuga, voluptas quibusdam
+                    itaque fugit vitae adipisci ullam nemo, deleniti, consectetur nobis quis esse placeat minima omnis!</p>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+    <!-- row 5 -->
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="text-center">
+                <h3>Operating Hours</h3>
+            </div>
+
+
+            <table class="table text-center">
+                <tr class="text-center"> 
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+
+                <tr>
+                    <td> Monday-Friday</td>
+                    <td> 9am - 10pm </td>
+                </tr>
+
+                <tr>
+                    <td> Saturday </td>
+                    <td> Closed </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="col-md-4">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8120405803684!2d103.80609491462161!3d1.28685486213339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1bd6a9fb8e29%3A0x83645244d59aba82!2sABC+Brickworks!5e0!3m2!1sen!2ssg!4v1527912866650 "></iframe>
+            </div>
+        </div>
+
+        <div class="col-md-4 ">
+            <h3>Check me out</h3>
+
+            <div class="list-group ">
+                <a href="http:// " class="list-group-item active ">
+                    <i class="fa fa-phone " aria-hidden="true "></i> +65 83947827
+                </a>
+
+                <a href="http:// " class="list-group-item active ">
+                    <i class="fa fa-envelope " aria-hidden="true "></i>
+                    <malito:>janine_chew@gmail.com</malito:>
+                </a>
+
+                <a href="http:// " class="list-group-item active ">
+                    <i class="fa fa-facebook-square " aria-hidden="true "></i> janine.chew
+                </a>
+
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- row 6 -->
+    <div class="row ">
+        <div class="col-md-12 text-center ">
+            <ul class="list-inline ">
+                <li>
+                    <a href="http:// ">
+                        <i class="fa fa-facebook " aria-hidden="true "></i>
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href="http:// ">
+                        <i class="fa fa-instagram " aria-hidden="true "></i>
+                    </a>
+                </li>
+
+            </ul>
+
+
+
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

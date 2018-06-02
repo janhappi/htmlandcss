@@ -1,0 +1,11 @@
+@import url( https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/PZSxGIZ/dark-glow-bokeh-light-fall-1-loopable-background_4knqgubo__F0000.png)
+
+.a-container {
+    background-color: white;
+}
+
+.my-body {
+
+    background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/PZSxGIZ/dark-glow-bokeh-light-fall-1-loopable-background_4knqgubo__F0000.png);
+	background-repeat: repeat;
+}
