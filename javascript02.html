@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My JavaScript 02</title>
+
+
+    <script language="javascript" type="text/javascript">     //this sentence is a declaration that this is javascript
+        var myObject;   //note that the m is small letter and the O is big letter, it is case sensitive
+
+        myObject = [
+            {
+                "id": 1,
+                "name": "Steven",          //"key":"data/value". This is the name
+                "dob": "01 - Jan - 1977",   //this is the dob
+                "cars": ["Civic", "Evolution", "Subaru"]     //inside this key there can be a array as there is []
+            },
+            {
+                "id": 2, //id is a numeric field so no need "".
+                "name": "Eddie",
+                "dob": "18 - Dec - 1977",
+                "cars": ["QQ", "Chevrolet", "Mini"]
+
+            },
+            {
+                "id": 3,
+                "name": "Grace",
+                "dob": "07 - Jul - 1977",
+                "cars": ["BMW", "Mercedes", "Lexus"]
+
+            }]; //now this is a memory location that stores a list of objects (This is a json structure)
+
+        var linebreak = "<br>";
+
+        function printData(count) {
+            var name = myObject[count].name  //position zero;
+            var dob = myObject[count].dob;
+            var car = "";
+            var carlen = myObject[count].cars.length;
+            //document.getElementById("demo").innerHTML+= name + linebreak + dob + linebreak + car + linebreak; //x is a variable.    //what is innerHTML
+
+            for (var i = 0; i < carlen; i++) {
+                car += myObject[count].cars[i] + linebreak; //car=car+myObject[count].cars[i];
+
+
+            }
+
+            var x = document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML = x + name + linebreak + dob + linebreak + car + linebreak;
+        }
+        function whileloopData() {
+            var counter = 0;
+
+            while (counter < myObject.length) { //start of while loop
+                printData(counter);
+
+                counter++; //counter = counter + 1;
+            } //end of while loop
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <input type="button" value="Print Data" onclick="whileloopData()">
+
+    <p id="demo">
+
+    </p>
+
+
+
+
+
+</body>
+
+</html>

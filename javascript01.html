@@ -13,7 +13,7 @@
         var number = 1;
         var name = "Janine"; //global variable
         var linebreak = "<br/>";
-        var names = ["angela", "chetan", "janine", "tong hwee", "christopher"];
+        var names = ["angela", "chetan", "janine", "tong hwee", "christopher"]; //variable is a location to store values
 
         function writeHTML() {
             document.writeln("<h1>Hello World!!</h1>");
@@ -63,19 +63,20 @@
             document.writeln("Number of items in Names:" + names.length + linebreak)
 
             var count = 0;
-            while(count < names.length) { //start of while loop
+            while (count < names.length) { //start of while loop
 
-             //document.writeln(names[count] + linebreak);
-             console.log(names[count]);
+                //document.writeln(names[count] + linebreak);
+                console.log(names[count]);
 
-             count++; //count = count + 1
-            
+                count++; //count = count + 1
+
             } //end of while loop
 
-           
+
         }
 
-
+        writeHTML();
+        processNames();
     </script>
 
 </head>
